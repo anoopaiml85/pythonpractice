@@ -3,7 +3,7 @@ def bubblesort(num_sort):
 
     for j in range(len(num_sort)-1):
        # print(j)
-        for i in range(len(num_sort)-1):
+        for i in range(len(num_sort)-j-1):
             
             if num_sort[i]>num_sort[i+1]:
                 swap = num_sort[i]
@@ -14,5 +14,6 @@ def bubblesort(num_sort):
                 pass
     return (num_sort)
 
+
 test=[5,4,3,2,1]
-print(bubblesort (test))
+print(bubblesort(test))
